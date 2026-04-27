@@ -5,21 +5,21 @@
 class LlmWiki < Formula
   desc "CLI + TUI for creating and managing LLM wikis"
   homepage "https://github.com/DavDaz/llm-wiki-generator"
-  version "0.3.4"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.3.4/llm-wiki_darwin_amd64.tar.gz"
-      sha256 "d76b7c79a92d9dc623046cbce6b2e37e1325ff9dcfe2872644e263eaf0d42e9f"
+      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.4.0/llm-wiki_darwin_amd64.tar.gz"
+      sha256 "24961c0882405e6736286e98636f567918722d74dd6afcf6f32f5ebea1475d6e"
 
       define_method(:install) do
         bin.install "llm-wiki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.3.4/llm-wiki_darwin_arm64.tar.gz"
-      sha256 "f7456692fb88a8622f6ef643fe853ca80b6df2b81df4bae65db5180da7c9096c"
+      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.4.0/llm-wiki_darwin_arm64.tar.gz"
+      sha256 "4dc2c7d05cf52f11d6160fcac2a25deb1655885563dbb4f07440ffdbb91349f7"
 
       define_method(:install) do
         bin.install "llm-wiki"
@@ -29,15 +29,15 @@ class LlmWiki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.3.4/llm-wiki_linux_amd64.tar.gz"
-      sha256 "246c1d70d8b77330d3dec6e783f6cddb5ebb9cceb6882f0d7e3c6a1384256d78"
+      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.4.0/llm-wiki_linux_amd64.tar.gz"
+      sha256 "e7faacd28835dc2bdbfba1134fe2e6753560bda72a91cbfa95b005904408f1f0"
       define_method(:install) do
         bin.install "llm-wiki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.3.4/llm-wiki_linux_arm64.tar.gz"
-      sha256 "c9690563b38096951d35b7a8e98626d421f850a7659f8d35701030406d575eb9"
+      url "https://github.com/DavDaz/llm-wiki-generator/releases/download/v0.4.0/llm-wiki_linux_arm64.tar.gz"
+      sha256 "10758f01e539b30eaee6e8a2bb4600ade9ab18ea838fcc54c9a408e64e9351be"
       define_method(:install) do
         bin.install "llm-wiki"
       end
